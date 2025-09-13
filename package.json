@@ -1,0 +1,36 @@
+{
+  "name": "dragonlock",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "dragonlock": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "format": "prettier -w ."
+  },
+  "dependencies": {
+    "clipboardy": "^4.0.0",
+    "commander": "^11.1.0",
+    "env-paths": "^3.0.0",
+    "inquirer": "^9.2.20",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.9",
+    "@types/node": "^20.12.12",
+    "@types/uuid": "^10.0.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.3",
+    "tsx": "^4.15.7",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  },
+  "engines": {
+    "node": ">=18.18"
+  }
+}
